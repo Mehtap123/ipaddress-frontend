@@ -1,6 +1,7 @@
 import { Map, Marker } from "pigeon-maps";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { TailSpin } from "react-loader-spinner";
 
 const Landingpage = () => {
   // const api = process.env.REACT_APP_API_URL;
@@ -69,7 +70,6 @@ const Landingpage = () => {
                   </button>
                 </div>
               </form>
-              
             </div>
           </div>
           <div className="card m-auto mt-5 mb-5" style={{ width: "70%" }}>
@@ -115,31 +115,32 @@ const Landingpage = () => {
                   </tr>
                 </tbody>
               </table>
-              
             </div>
-            
           </div>
           <div>
-                <p>
-                  made with{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="#ff00ff"
-                    className="bi bi-heart-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
-                    />
-                  </svg>
-                </p>
-              </div>
+            <p>
+              made with{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#ff00ff"
+                className="bi bi-heart-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                />
+              </svg>
+            </p>
+          </div>
         </>
       ) : (
-        "Loading...."
+        // "Loading...."
+        <div className="loaderSpinner">
+          <TailSpin color="#00BFFF" height={80} width={80} />
+        </div>
       )}
     </>
   );

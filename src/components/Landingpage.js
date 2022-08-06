@@ -43,7 +43,7 @@ const Landingpage = () => {
             <div className="card-body">
               <figure className="text-center">
                 <blockquote className="blockquote">
-                  <p>Jetzt IP-Adresse lokalisieren</p>
+                  <p>Jetzt IP-Adressen lokalisieren</p>
                 </blockquote>
                 <figcaption className="blockquote-footer">
                   Gib in das Suchfeld die IP Adresse ein, über die du mehr

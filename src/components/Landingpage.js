@@ -6,7 +6,7 @@ import { TailSpin } from "react-loader-spinner";
 const Landingpage = () => {
   // const api = process.env.REACT_APP_API_URL;
 
-  const [data, setData] = useState();
+  const [data, setData] = useState({});
 
   useEffect(() => {
     fetch("http://ip-api.com/json/24.48.0.1")

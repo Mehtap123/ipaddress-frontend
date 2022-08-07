@@ -13,7 +13,7 @@ const Landingpage = () => {
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((error) => console.log(error));
-  }, []);
+  }, [data]);
 
   console.log(data);
 

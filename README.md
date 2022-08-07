@@ -1,4 +1,4 @@
-# Welcome to Ipaddress-app
+# Welcome to Ipaddressapp
 
 Find it @ https://ipaddressapp.netlify.app
 

@@ -53,7 +53,7 @@ const Landingpage = () => {
     <>
       {data ? (
         <>
-          <div className="card m-auto mt-5" style={{ width: "70%" }}>
+          <div className="card m-auto mt-5 box" style={{ width: "70%" }}>
             <div className="card-body">
               <figure className="text-center">
                 <blockquote className="blockquote">
@@ -70,7 +70,7 @@ const Landingpage = () => {
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="24.48.0.1"
+                    placeholder="Bsp. IP: 24.48.0.1"
                     aria-label="IP-Adresse"
                     aria-describedby="button-addon2"
                   />
@@ -86,7 +86,7 @@ const Landingpage = () => {
               </form>
             </div>
           </div>
-          <div className="card m-auto mt-5 mb-5" style={{ width: "70%" }}>
+          <div className="card m-auto mt-5 mb-5 box" style={{ width: "70%" }}>
             <Map height={300} center={[data.lat, data.lon]} zoom={13}>
               <Marker width={50} anchor={[data.lat, data.lon]} />
             </Map>
